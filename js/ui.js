@@ -91,6 +91,11 @@ var UI = {
       // Edit mode
       if (a.removable) {
         html += '<div class="ac-edit-mode">';
+        html += '<div class="ac-edit-row"><label>' + t('asset_type') + '</label>';
+        html += '<select class="ac-edit-input ac-type-select" data-field="type" data-index="' + i + '">';
+        html += '<option value="stock"' + (a.type === 'stock' ? ' selected' : '') + '>' + t('type_stock') + '</option>';
+        html += '<option value="crypto"' + (a.type === 'crypto' ? ' selected' : '') + '>' + t('type_crypto') + '</option>';
+        html += '</select></div>';
         html += '<div class="ac-edit-row"><label>' + t('ticker_symbol') + '</label>';
         html += '<input type="text" class="ac-edit-input" data-field="ticker" data-index="' + i + '" value="' + UI._esc(a.ticker) + '"></div>';
         html += '<div class="ac-edit-row"><label>' + t('display_name') + '</label>';

@@ -11,7 +11,7 @@ var AppState = {
 };
 
 var StateManager = {
-  STORAGE_KEY: 'btc-portfolio-state-v4',
+  STORAGE_KEY: 'btc-portfolio-state-v5',
 
   init: function() {
     var saved = this.load();

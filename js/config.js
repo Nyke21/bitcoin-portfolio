@@ -22,7 +22,7 @@ var AppConfig = {
       quantity: 0,
       quantityLabel: 'BTC',
       cagr: 25,
-      removable: false
+      removable: true
     },
     {
       type: 'stock',

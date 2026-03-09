@@ -58,7 +58,10 @@ var I18n = {
       total_label: 'Total',
       new_asset_ticker: 'TICKER',
       new_asset_name: 'New Asset',
-      click_to_edit: 'Click to edit'
+      click_to_edit: 'Click to edit',
+      asset_type: 'ASSET TYPE',
+      type_crypto: 'Crypto',
+      type_stock: 'Stock / ETF'
     },
     de: {
       title: 'Bitcoin <span>Portfolio</span><br>Projektion',
@@ -115,7 +118,10 @@ var I18n = {
       total_label: 'Gesamt',
       new_asset_ticker: 'TICKER',
       new_asset_name: 'Neues Asset',
-      click_to_edit: 'Klicken zum Bearbeiten'
+      click_to_edit: 'Klicken zum Bearbeiten',
+      asset_type: 'ASSET-TYP',
+      type_crypto: 'Krypto',
+      type_stock: 'Aktie / ETF'
     },
     es: {
       title: 'Bitcoin <span>Portfolio</span><br>Proyecci\u00F3n',
@@ -172,7 +178,10 @@ var I18n = {
       total_label: 'Total',
       new_asset_ticker: 'TICKER',
       new_asset_name: 'Nuevo activo',
-      click_to_edit: 'Clic para editar'
+      click_to_edit: 'Clic para editar',
+      asset_type: 'TIPO DE ACTIVO',
+      type_crypto: 'Cripto',
+      type_stock: 'Acci\u00F3n / ETF'
     },
     fr: {
       title: 'Bitcoin <span>Portfolio</span><br>Projection',
@@ -229,7 +238,10 @@ var I18n = {
       total_label: 'Total',
       new_asset_ticker: 'TICKER',
       new_asset_name: 'Nouvel actif',
-      click_to_edit: 'Cliquer pour modifier'
+      click_to_edit: 'Cliquer pour modifier',
+      asset_type: 'TYPE D\u2019ACTIF',
+      type_crypto: 'Crypto',
+      type_stock: 'Action / ETF'
     },
     zh: {
       title: 'Bitcoin <span>\u6295\u8D44\u7EC4\u5408</span><br>\u9884\u6D4B',
@@ -286,7 +298,10 @@ var I18n = {
       total_label: '\u603B\u8BA1',
       new_asset_ticker: 'TICKER',
       new_asset_name: '\u65B0\u8D44\u4EA7',
-      click_to_edit: '\u70B9\u51FB\u7F16\u8F91'
+      click_to_edit: '\u70B9\u51FB\u7F16\u8F91',
+      asset_type: '\u8D44\u4EA7\u7C7B\u578B',
+      type_crypto: '\u52A0\u5BC6\u8D27\u5E01',
+      type_stock: '\u80A1\u7968 / ETF'
     },
     ja: {
       title: 'Bitcoin <span>\u30DD\u30FC\u30C8\u30D5\u30A9\u30EA\u30AA</span><br>\u4E88\u6E2C',
@@ -343,7 +358,10 @@ var I18n = {
       total_label: '\u5408\u8A08',
       new_asset_ticker: 'TICKER',
       new_asset_name: '\u65B0\u898F\u8CC7\u7523',
-      click_to_edit: '\u30AF\u30EA\u30C3\u30AF\u3067\u7DE8\u96C6'
+      click_to_edit: '\u30AF\u30EA\u30C3\u30AF\u3067\u7DE8\u96C6',
+      asset_type: '\u8CC7\u7523\u30BF\u30A4\u30D7',
+      type_crypto: '\u6697\u53F7\u8CC7\u7523',
+      type_stock: '\u682A\u5F0F / ETF'
     }
   }
 };

@@ -107,19 +107,24 @@ var Events = {
     var exchange = get('exchange').toUpperCase();
     var price = parseFloat(get('price'));
     var qty = parseFloat(get('qty'));
+    var type = get('type') || 'stock';
 
     if (!ticker || isNaN(price) || price <= 0 || isNaN(qty) || qty <= 0) return;
 
     var displayTicker = exchange ? exchange + ': ' + ticker : ticker;
+    var isCrypto = type === 'crypto';
+    var quantityLabel = isCrypto ? ticker : t('shares');
 
     StateManager.updateAsset(idx, {
+      type: type,
       ticker: ticker,
       displayTicker: displayTicker,
       name: name || ticker,
       exchange: exchange,
-      apiSymbol: ticker,
+      apiSymbol: isCrypto ? ticker.toLowerCase() : ticker,
       price: price,
-      quantity: qty
+      quantity: qty,
+      quantityLabel: quantityLabel
     });
 
     var card = container.querySelector('.asset-card[data-index="' + idx + '"]');
