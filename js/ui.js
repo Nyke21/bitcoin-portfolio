@@ -257,6 +257,7 @@ var UI = {
   },
 
   renderLightning: function() {
+    var addr = 'hertrace563@walletofsatoshi.com';
     var ti = document.getElementById('lightning-title');
     if (ti) ti.textContent = t('lightning_title');
     var tx = document.getElementById('lightning-text');
@@ -267,6 +268,18 @@ var UI = {
       var svgHtml = svg ? svg.outerHTML : '';
       btn.innerHTML = svgHtml + ' ' + t('lightning_btn');
     }
+    var addrEl = document.getElementById('lightning-address');
+    if (addrEl) {
+      addrEl.innerHTML = '<span class="addr-icon">\u26A1</span> ' + addr + ' <span class="copy-hint">(' + t('lightning_copy') + ')</span>';
+      addrEl.onclick = function() {
+        navigator.clipboard.writeText(addr).then(function() {
+          addrEl.innerHTML = '<span class="addr-icon">\u26A1</span> ' + t('lightning_copied');
+          setTimeout(function() { UI.renderLightning(); }, 1500);
+        });
+      };
+    }
+    var qrLabel = document.getElementById('lightning-qr-label');
+    if (qrLabel) qrLabel.textContent = t('lightning_qr');
   },
 
   renderYearsControl: function() {
