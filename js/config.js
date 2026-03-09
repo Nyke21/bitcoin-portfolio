@@ -19,7 +19,7 @@ var AppConfig = {
       exchange: '',
       apiSymbol: 'bitcoin',
       price: 68400,
-      quantity: 1.25,
+      quantity: 0,
       quantityLabel: 'BTC',
       cagr: 25,
       removable: false
@@ -32,7 +32,7 @@ var AppConfig = {
       exchange: 'NASDAQ',
       apiSymbol: 'MSTR',
       price: 133.53,
-      quantity: 40,
+      quantity: 0,
       quantityLabel: 'Shares',
       cagr: 35,
       removable: true
@@ -46,7 +46,7 @@ var AppConfig = {
       exchange: 'TYO',
       apiSymbol: 'MTPLF',
       price: 2.10,
-      quantity: 2100,
+      quantity: 0,
       quantityLabel: 'Shares',
       cagr: 38,
       removable: true

@@ -11,7 +11,7 @@ var AppState = {
 };
 
 var StateManager = {
-  STORAGE_KEY: 'btc-portfolio-state-v3',
+  STORAGE_KEY: 'btc-portfolio-state-v4',
 
   init: function() {
     var saved = this.load();
@@ -47,8 +47,24 @@ var StateManager = {
     AppState.assets = AppConfig.defaults.map(function(d, i) {
       var asset = JSON.parse(JSON.stringify(d));
       asset.colorIndex = i;
+      if (asset.quantity === 0) {
+        asset.quantity = StateManager._randomQty(asset.type, asset.ticker);
+      }
       return asset;
     });
+  },
+
+  _randomQty: function(type, ticker) {
+    if (type === 'crypto') {
+      // 0.1 - 3.0 BTC, rounded to 2 decimals
+      return Math.round((Math.random() * 2.9 + 0.1) * 100) / 100;
+    }
+    if (ticker === 'MTPLF') {
+      // 100 - 5000 shares, rounded to 100s
+      return Math.round((Math.random() * 49 + 1)) * 100;
+    }
+    // Stocks: 5 - 100 shares, whole numbers
+    return Math.round(Math.random() * 95 + 5);
   },
 
   save: function() {

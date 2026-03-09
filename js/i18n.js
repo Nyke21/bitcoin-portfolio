@@ -5,7 +5,7 @@ var I18n = {
   strings: {
     en: {
       title: 'Bitcoin <span>Portfolio</span><br>Projection',
-      subtitle: 'CAGR individually adjustable \u00B7 {years} years',
+      subtitle: 'CAGR individually adjustable',
       date_prefix: 'AS OF:',
       cagr_label: 'CAGR / YEAR',
       shares: 'Shares',
@@ -62,7 +62,7 @@ var I18n = {
     },
     de: {
       title: 'Bitcoin <span>Portfolio</span><br>Projektion',
-      subtitle: 'CAGR individuell einstellbar \u00B7 {years} Jahre',
+      subtitle: 'CAGR individuell einstellbar',
       date_prefix: 'STAND:',
       cagr_label: 'CAGR / JAHR',
       shares: 'Aktien',
@@ -119,7 +119,7 @@ var I18n = {
     },
     es: {
       title: 'Bitcoin <span>Portfolio</span><br>Proyecci\u00F3n',
-      subtitle: 'CAGR ajustable individualmente \u00B7 {years} a\u00F1os',
+      subtitle: 'CAGR ajustable individualmente',
       date_prefix: 'FECHA:',
       cagr_label: 'CAGR / A\u00D1O',
       shares: 'Acciones',
@@ -176,7 +176,7 @@ var I18n = {
     },
     fr: {
       title: 'Bitcoin <span>Portfolio</span><br>Projection',
-      subtitle: 'CAGR ajustable individuellement \u00B7 {years} ans',
+      subtitle: 'CAGR ajustable individuellement',
       date_prefix: 'AU :',
       cagr_label: 'CAGR / AN',
       shares: 'Actions',
@@ -233,7 +233,7 @@ var I18n = {
     },
     zh: {
       title: 'Bitcoin <span>\u6295\u8D44\u7EC4\u5408</span><br>\u9884\u6D4B',
-      subtitle: 'CAGR \u53EF\u5355\u72EC\u8C03\u6574 \u00B7 {years} \u5E74',
+      subtitle: 'CAGR \u53EF\u5355\u72EC\u8C03\u6574',
       date_prefix: '\u622A\u81F3:',
       cagr_label: 'CAGR / \u5E74',
       shares: '\u80A1',
@@ -290,7 +290,7 @@ var I18n = {
     },
     ja: {
       title: 'Bitcoin <span>\u30DD\u30FC\u30C8\u30D5\u30A9\u30EA\u30AA</span><br>\u4E88\u6E2C',
-      subtitle: 'CAGR \u500B\u5225\u8ABF\u6574\u53EF\u80FD \u00B7 {years} \u5E74',
+      subtitle: 'CAGR \u500B\u5225\u8ABF\u6574\u53EF\u80FD',
       date_prefix: '\u73FE\u5728:',
       cagr_label: 'CAGR / \u5E74',
       shares: '\u682A',
