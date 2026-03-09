@@ -4,67 +4,67 @@
   border: 1px solid var(--border);
   border-top: 2px solid var(--gold);
   margin-top: var(--sp-5);
-  padding: var(--sp-6) var(--sp-5);
+  padding: var(--sp-7) var(--sp-5);
 }
 
 .lightning-inner {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  gap: var(--sp-5);
-  max-width: 900px;
+  text-align: center;
+  gap: var(--sp-4);
+  max-width: 480px;
   margin: 0 auto;
 }
 
-.lightning-left {
-  display: flex;
-  flex-direction: column;
-  gap: var(--sp-4);
-}
-
-.lightning-text {
-  display: flex;
-  align-items: center;
-  gap: var(--sp-4);
-}
-
 .lightning-icon {
-  font-size: 32px;
-  width: 56px;
-  height: 56px;
+  font-size: 36px;
+  width: 64px;
+  height: 64px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(247, 201, 72, 0.1);
-  border: 1px solid rgba(247, 201, 72, 0.3);
+  background: rgba(247, 201, 72, 0.08);
+  border: 1px solid rgba(247, 201, 72, 0.25);
   border-radius: 50%;
-  flex-shrink: 0;
 }
 
-.lightning-text h3 {
-  font-size: var(--fs-md);
+.lightning-inner h3 {
+  font-size: var(--fs-lg);
   font-weight: 700;
   color: var(--text);
-  margin-bottom: 2px;
 }
 
-.lightning-text p {
+.lightning-inner > p {
   font-family: var(--font-mono);
   font-size: var(--fs-sm);
   color: var(--muted);
+  margin-top: -8px;
+}
+
+.lightning-qr {
+  padding: var(--sp-4);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.3);
+  line-height: 0;
+}
+
+.lightning-qr img {
+  border-radius: 4px;
 }
 
 .lightning-address {
   font-family: var(--font-mono);
-  font-size: 11px;
+  font-size: var(--fs-sm);
   color: var(--muted);
-  background: rgba(247, 201, 72, 0.05);
+  background: rgba(247, 201, 72, 0.04);
   border: 1px solid var(--border);
-  padding: var(--sp-2) var(--sp-3);
-  word-break: break-all;
+  padding: var(--sp-2) var(--sp-4);
   cursor: pointer;
   transition: all var(--tr-normal);
-  position: relative;
+  word-break: break-all;
+  width: 100%;
 }
 
 .lightning-address:hover {
@@ -74,78 +74,34 @@
 
 .lightning-address .copy-hint {
   font-size: 9px;
-  color: var(--muted);
-  margin-left: var(--sp-2);
   opacity: 0.6;
 }
 
 .lightning-btn {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: var(--sp-2);
-  background: linear-gradient(135deg, rgba(247, 201, 72, 0.15), rgba(247, 147, 26, 0.15));
+  background: linear-gradient(135deg, rgba(247, 201, 72, 0.12), rgba(247, 147, 26, 0.12));
   border: 1px solid var(--gold);
   color: var(--gold);
   font-family: var(--font-mono);
   font-size: var(--fs-sm);
-  padding: var(--sp-3) var(--sp-5);
+  padding: var(--sp-3) var(--sp-6);
   cursor: pointer;
   transition: all var(--tr-normal);
   text-decoration: none;
   min-height: 44px;
-  white-space: nowrap;
-  letter-spacing: 0.5px;
-  align-self: flex-start;
+  letter-spacing: 1px;
+  width: 100%;
 }
 
 .lightning-btn:hover {
-  background: linear-gradient(135deg, rgba(247, 201, 72, 0.25), rgba(247, 147, 26, 0.25));
-  box-shadow: 0 0 20px rgba(247, 201, 72, 0.2);
+  background: linear-gradient(135deg, rgba(247, 201, 72, 0.22), rgba(247, 147, 26, 0.22));
+  box-shadow: 0 0 24px rgba(247, 201, 72, 0.15);
 }
 
 .lightning-btn svg {
   width: 16px;
   height: 16px;
-}
-
-.lightning-qr {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: var(--sp-2);
-  flex-shrink: 0;
-}
-
-.lightning-qr img {
-  border: 2px solid var(--border);
-  border-radius: 4px;
-}
-
-.lightning-qr-label {
-  font-family: var(--font-mono);
-  font-size: 9px;
-  color: var(--muted);
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-@media (max-width: 640px) {
-  .lightning-inner {
-    flex-direction: column;
-    text-align: center;
-  }
-  .lightning-left {
-    align-items: center;
-  }
-  .lightning-text {
-    flex-direction: column;
-  }
-  .lightning-btn {
-    width: 100%;
-    justify-content: center;
-    align-self: stretch;
-  }
-  .lightning-qr {
-    order: -1;
-  }
 }

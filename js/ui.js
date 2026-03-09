@@ -260,7 +260,7 @@ var UI = {
     var addr = 'hertrace563@walletofsatoshi.com';
     var ti = document.getElementById('lightning-title');
     if (ti) ti.textContent = t('lightning_title');
-    var tx = document.getElementById('lightning-text');
+    var tx = document.getElementById('lightning-subtitle');
     if (tx) tx.textContent = t('lightning_text');
     var btn = document.getElementById('lightning-tip-btn');
     if (btn) {
@@ -270,16 +270,18 @@ var UI = {
     }
     var addrEl = document.getElementById('lightning-address');
     if (addrEl) {
-      addrEl.innerHTML = '<span class="addr-icon">\u26A1</span> ' + addr + ' <span class="copy-hint">(' + t('lightning_copy') + ')</span>';
+      addrEl.innerHTML = addr + ' <span class="copy-hint">\u00B7 ' + t('lightning_copy') + '</span>';
       addrEl.onclick = function() {
         navigator.clipboard.writeText(addr).then(function() {
-          addrEl.innerHTML = '<span class="addr-icon">\u26A1</span> ' + t('lightning_copied');
-          setTimeout(function() { UI.renderLightning(); }, 1500);
+          addrEl.innerHTML = '\u2713 ' + t('lightning_copied');
+          addrEl.style.color = 'var(--gold)';
+          setTimeout(function() {
+            addrEl.style.color = '';
+            UI.renderLightning();
+          }, 1500);
         });
       };
     }
-    var qrLabel = document.getElementById('lightning-qr-label');
-    if (qrLabel) qrLabel.textContent = t('lightning_qr');
   },
 
   renderYearsControl: function() {

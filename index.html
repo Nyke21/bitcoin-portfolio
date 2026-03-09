@@ -25,6 +25,7 @@
         <button class="lang-btn active" data-lang="en" title="English"><img src="https://flagcdn.com/w40/gb.png" alt="EN" width="24" height="16"></button>
         <button class="lang-btn" data-lang="de" title="Deutsch"><img src="https://flagcdn.com/w40/de.png" alt="DE" width="24" height="16"></button>
         <button class="lang-btn" data-lang="es" title="Espa&ntilde;ol"><img src="https://flagcdn.com/w40/es.png" alt="ES" width="24" height="16"></button>
+        <button class="lang-btn" data-lang="fr" title="Fran&ccedil;ais"><img src="https://flagcdn.com/w40/fr.png" alt="FR" width="24" height="16"></button>
         <button class="lang-btn" data-lang="zh" title="&#20013;&#25991;"><img src="https://flagcdn.com/w40/cn.png" alt="ZH" width="24" height="16"></button>
         <button class="lang-btn" data-lang="ja" title="&#26085;&#26412;&#35486;"><img src="https://flagcdn.com/w40/jp.png" alt="JA" width="24" height="16"></button>
       </div>
@@ -100,24 +101,17 @@
   <!-- LIGHTNING TIP -->
   <footer class="lightning-section">
     <div class="lightning-inner">
-      <div class="lightning-left">
-        <div class="lightning-text">
-          <span class="lightning-icon">&#9889;</span>
-          <div>
-            <h3 id="lightning-title"></h3>
-            <p id="lightning-text"></p>
-          </div>
-        </div>
-        <div class="lightning-address" id="lightning-address"></div>
-        <a href="lightning:hertrace563@walletofsatoshi.com" class="lightning-btn" id="lightning-tip-btn">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
-          LIGHTNING TIP
-        </a>
-      </div>
+      <span class="lightning-icon">&#9889;</span>
+      <h3 id="lightning-title"></h3>
+      <p id="lightning-subtitle"></p>
       <div class="lightning-qr">
-        <img src="https://api.qrserver.com/v1/create-qr-code/?size=160x160&data=lightning%3Ahertrace563%40walletofsatoshi.com&bgcolor=0d1318&color=f7c948&format=png" alt="Lightning QR Code" width="160" height="160">
-        <span class="lightning-qr-label" id="lightning-qr-label"></span>
+        <img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=lightning%3Ahertrace563%40walletofsatoshi.com&bgcolor=0d1318&color=f7c948&format=png" alt="Lightning QR Code" width="180" height="180">
       </div>
+      <div class="lightning-address" id="lightning-address"></div>
+      <a href="lightning:hertrace563@walletofsatoshi.com" class="lightning-btn" id="lightning-tip-btn">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+        LIGHTNING TIP
+      </a>
     </div>
   </footer>
 
