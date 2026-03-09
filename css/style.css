@@ -382,20 +382,30 @@ input[type=range]::-moz-range-thumb {
 }
 
 .preset-btn {
-  padding: 9px var(--sp-2);
+  padding: 12px var(--sp-3);
   border: 1px solid var(--border);
-  background: transparent;
-  color: var(--muted);
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--text);
   font-family: var(--font-mono);
-  font-size: var(--fs-xs);
+  font-size: var(--fs-sm);
+  font-weight: 700;
   cursor: pointer;
   transition: all var(--tr-fast);
-  line-height: 1.5;
+  line-height: 1.6;
   text-align: center;
   min-height: 44px;
 }
+.preset-btn small {
+  font-weight: 400;
+  color: var(--text-secondary);
+  font-size: 10px;
+}
 .preset-btn:hover {
   border-color: var(--gold);
+  color: var(--gold);
+  background: rgba(247, 201, 72, 0.05);
+}
+.preset-btn:hover small {
   color: var(--gold);
 }
 
